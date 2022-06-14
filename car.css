@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    border-left: 10px groove orange;
+    border-top: 10px groove white;
+    border-right:10px groove green;
+    overflow: hidden;
+    outline: 5px solid white;
+}
+.skey{
+    height: 100vh;
+    width: 100%;
+    background-image: url("./images/sky\ \(1\).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.road{
+    height: 200px;
+    width: 500%;
+    display: block;
+    background-image: url("./images/road.jpg");
+    position: absolute;
+    background-repeat: repeat-x;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    animation: road 5s linear infinite;
+}
+@keyframes road{
+    100%{
+        transform: translateX(-3400px);
+
+    }
+}
+.city{
+    height: 200px;
+    width: 500%;
+    display: block;
+    background-image: url("./images/city.png");
+    position: absolute;
+    background-repeat: repeat-x;
+    bottom:200px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    animation: city 20s linear infinite;
+}
+@keyframes city{
+    100%{
+        transform: translateX(-1400px);
+    }
+}
+.car{
+   width: 400px;
+   left: 50%;
+   bottom: 100px;
+   transform: translateX(-50%);
+   position: absolute;
+   z-index: 2;
+}
+.car img{
+    width: 100%;
+    animation: car 1s linear infinite;
+}
+@keyframes car{
+    100%{
+        transform: translateY(-2px);
+    }
+    50%{
+        transform: translateY(2px);
+    }
+    0%{
+        transform: translateY(-2px);
+    }
+}
+.wheel{
+    left: 50%;
+    bottom: 178px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+.wheel img{
+    width: 72px;
+    height: 72px;
+    animation: wheel 1s linear infinite;
+}
+.backWheel{
+    left: -165px;
+    position: absolute;
+}
+.frontWheel{
+    left: 80px;
+    position: absolute;
+}
+@keyframes wheel{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.happy{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+}
+.happ{
+    background-color: orange;
+}
+.father{
+    background-color: white;
+}
+.day{
+    background-color: green;
+}
+.flag{
+    position: relative;
+    left: 160px;
+    bottom: -100px;
+    /* transform: rotateY(180 deg); */
+}
+.sun{
+    /* text-align: end; */
+    position: absolute;
+    left: 1300px;
+}

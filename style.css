@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    width: 30%;
+    margin: auto;
+    background-color: yellow;
+}
+
+.div1{
+    width: 80px;
+    height: 60px;
+    background: lightgreen;
+    transition:  2s;
+    margin-bottom:20px;
+}
+   .div1:hover {
+        width: 200px;
+        
+
+}
+.div2{
+    width: 80px;
+    height: 60px;
+    background: lightgreen;
+    transition:  2s;
+    margin-bottom:20px;
+}
+   .div2:hover {
+        width: 200px;
+        height: 200px;
+
+}
+.div3{
+    width: 80px;
+    height: 60px;
+    background: lightgreen;
+    transition-property: width;
+    transition-duration: 3s;
+    margin-bottom:20px;
+}
+   .div3:hover{
+        width: 200px;
+
+}
+.div4{
+    width: 80px;
+    height: 60px;
+    background: lightgreen;
+    transition: width 2s;
+     transition-timing-function:ease ;
+    margin-bottom:20px;
+}
+   .div4:hover{
+        width: 200px;
+
+}
+.div5{
+    width: 80px;
+    height: 60px;
+    background: lightgreen;
+    transition: width 2s;
+    transition-timing-function: ease-in;
+    margin-bottom:20px;
+}
+   .div5:hover{
+        width: 200px;
+
+}
+.div6{
+    width: 80px;
+    height: 60px;
+    background: lightgreen;
+    transition: width 2s;
+    transition-timing-function: ease-out;
+    margin-bottom:20px;
+}
+   .div6:hover{
+        width: 200px;
+
+}
+.div7{
+    width: 80px;
+    height: 60px;
+    background: lightgreen;
+    transition: width 2s;
+    transition-delay: 0.5s;
+    transition-timing-function:ease;
+    margin-bottom:20px;
+}
+   .div7:hover{
+        width: 200px;
+
+}
+

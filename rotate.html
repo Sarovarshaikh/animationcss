@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skew</title>
+    <style>
+        .div1 {
+            width: 80px;
+            height: 80px;
+            background-color: rgb(103, 141, 173);
+            margin: 20px;
+            animation-name: div1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes div1 {
+            from {
+                transform: skewX(0deg);
+
+            }
+
+            to {
+                transform: skewX(40deg);
+            }
+        }
+
+    .box1{
+            width: 80px;
+            height: 80px;
+            background-color: rgb(103, 141, 173);
+            margin: 20px;
+            animation-name: box1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+    }
+
+    @keyframes box1{
+        from{
+            transform: skewY(0deg);
+        }
+        to{
+            transform: skewY(40deg);
+        }
+    }
+
+
+        li {
+            display: flex;
+
+        }
+
+        /* li:hover {
+            transform: skewX(20deg);
+            transition-duration: 1s;
+        } */
+
+        ol {
+            /* text-align: center; */
+            width: 50%;
+            margin: auto;
+        }
+
+
+
+        /* rotating contunusly */
+        .rotate {
+            animation: rotation 8s infinite linear;
+            transition-delay: 2s;
+            width: 80px;
+            height: 80px;
+            background-color: rgb(103, 141, 173);
+            margin: 20px;
+            animation-name: rotation;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(359deg);
+            }
+        }
+
+        .trs1 {
+            width: 80px;
+            height: 80px;
+            background-color: rgb(103, 141, 173);
+            margin: 10px;
+            animation-name: trs1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes trs1{
+            from{
+                transform: scaleY(0.5);
+            }
+            to{
+                transform: scaleY(1.0);
+            }
+        }
+        .trs2 {
+            width: 80px;
+            height: 80px;
+            background-color: rgb(213, 114, 15);
+            margin: 10px;
+            animation-duration: 4s;
+            animation-name: trs2;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes trs2 {
+            from { 
+                /* transform: translate(0,0); */
+                transform: scaleX(0.5);
+                /* width: 40px; */
+            }
+
+            to {
+                /* transform: translate(80px,80px); */
+                /* width: 80px; */
+                transform: scaleX(1.0);
+            }
+        }
+
+        .trs3 {
+            width: 80px;
+            height: 80px;
+            background-color: green;
+            margin: 10px;
+            animation-duration: 4s;
+            animation-name: trs3;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes trs3{
+            from{
+                transform: rotate(0deg);
+
+            }
+            to{
+                transform: rotate(150deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+
+        <li>
+            <div class="div1"></div>
+            <div class="div1"></div>
+            <div class="div1"></div>
+         </li>
+         <br><br><br>
+        <li>
+             <div class="box1"></div>
+             <div class="box1"></div>
+             <div class="box1"></div>
+        
+        </li>
+        <br><br><br>
+        <li>
+            <div class="rotate"></div>
+            <div class="rotate"></div>
+            <div class="rotate"></div>
+        </li> <br><br><br>
+        <li>
+            <div class="trs1"></div>
+            <div class="trs2"></div>
+            <div class="trs3"></div>
+        </li>
+        <li> <a href="translate.html">Lets go and try another things</a></li>
+
+    </ol> 
+    
+
+</body>
+
+</html>
